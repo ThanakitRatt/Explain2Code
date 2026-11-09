@@ -262,7 +262,8 @@ def results_index(result_root: Path | None = None,
         f"<td>{esc(entry['run_name'])}</td>"
         f"<td>{esc(entry['dataset'])}</td>"
         f"<td>{entry['tasks']}</td>"
-        f"<td>{f'{entry['pass_rate']:.1%}' if entry['pass_rate'] is not None else 'n/a'}</td>"
+        + (f"<td>{entry['pass_rate']:.1%}</td>"
+           if entry["pass_rate"] is not None else "<td>n/a</td>")
         + "".join(f"<td>{entry['structural_means'][key]:.3f}</td>"
                  if entry["structural_means"][key] is not None else "<td>n/a</td>"
                  for key in ("wl", "align_f1", "edge_jaccard", "node_label_jaccard", "control"))
