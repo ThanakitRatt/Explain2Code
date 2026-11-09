@@ -35,9 +35,9 @@ AGENT_PRESETS = {
         provider="claude_cli",
         binary=resolve_binary("CLAUDE_BIN", "claude"),
         models={
-            "opus": os.getenv("CLAUDE_OPUS_MODEL", "claude-opus-5.5"),
-            "sonnet": os.getenv("CLAUDE_SONNET_MODEL", "claude-sonnet-5.5"),
-            "haiku": os.getenv("CLAUDE_HAIKU_MODEL", "claude-haiku-5.5"),
+            "opus": os.getenv("CLAUDE_OPUS_MODEL", "claude-opus-5-5"),
+            "sonnet": os.getenv("CLAUDE_SONNET_MODEL", "claude-sonnet-5-5"),
+            "haiku": os.getenv("CLAUDE_HAIKU_MODEL", "claude-haiku-5-5"),
         },
     ),
     "gpt_codex": AgentPreset(
