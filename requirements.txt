@@ -1,0 +1,6 @@
+datasets>=2.19
+evalplus
+jupyter
+networkx
+numpy
+scipy

@@ -1,0 +1,27 @@
+# Private working materials; not part of the replication package
+/SP2026_Code_Comprehension_and_Explainability/
+
+# Local Python environments and interpreter artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter-generated files (keep the notebook itself)
+.ipynb_checkpoints/
+
+# Generated experiment artifacts and reports
+/artifacts/
+/results/
+
+# Local machine/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
